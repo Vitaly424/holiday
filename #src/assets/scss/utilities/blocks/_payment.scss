@@ -1,0 +1,180 @@
+.payment{
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   text-align: center;
+}
+ 
+
+.payment__title{
+   margin-bottom: 10px;
+
+   color: $concrete;
+}
+
+
+.payment__desk{
+   margin-bottom: 50px;
+
+   font-size: 25px;
+   line-height: 1.2;
+   text-align: center;
+   color: $concrete;
+}
+
+
+.payment__form-row{
+   display: flex;
+   justify-content: space-between;
+}
+
+.payment__form-title{
+   display: block;
+   margin-bottom: 10px;
+
+   font-size: 16px;
+   line-height: 1.2;
+   text-align: left;
+   color: $creamCan;
+}
+ 
+ 
+
+.payment__input{
+   padding-left: 28px;
+   padding-right: 28px;
+   width: 198px;
+   height: 57px;
+   
+   border: 1px solid $concrete;
+   border-radius: 30px;
+   background-color: transparent;
+
+   font-size: 18px;
+   line-height: 1;
+   color: $concrete;
+
+   transition: border .2s linear;
+   &:hover{
+      border: 1px solid $creamCan;
+   }
+
+   &:focus{
+      outline: none;
+      border: 1px solid $creamCan;
+   }
+
+   &::placeholder{
+      color: $concrete;
+   }
+}
+
+
+
+.payment__form-bottom{
+   margin-top: 40px;
+
+   display: flex;
+   justify-content: center;
+
+   .payment__input{  
+      width: 319.69px;
+      height: 57px;
+
+      border: 1px solid #F2F2F2;
+      box-sizing: border-box;
+      border-radius: 30px;
+
+      transition: border .2s linear;
+      &:hover{
+         border: 1px solid $creamCan;
+      }
+   
+      &:focus{
+         outline: none;
+         border: 1px solid $creamCan;
+      }   
+   }
+
+   .payment__form-item:first-child{
+      margin-right: 50px;
+   }
+}
+
+.payment__btn{
+   margin-top: 40px;
+}
+
+
+@media (max-width: 972px){
+   .payment{
+      padding-top: 20px;
+      padding-bottom: 20px;
+   
+      text-align: center;
+   }
+}
+
+
+@media (max-width: 1466px){
+   .payment__form-row{
+      flex-wrap: wrap;
+   }
+   .payment__form-item{
+      margin-bottom: 20px;
+      flex-basis: 33%;
+   }
+   .payment__form-title{
+      text-align: center;
+   }
+   .payment__form-bottom{
+      margin-top: 15px;
+   }
+}
+
+ 
+@media (max-width: 784px){
+   .payment__form-bottom{
+      .payment__input{
+         width: 198px;
+      }
+   }
+}
+
+@media(max-width: 697px){
+   .payment__form-item{
+      margin-bottom: 20px;
+      flex-basis: 48%;
+   }
+   .payment__form-bottom{
+      margin-top: 40px;
+   }
+   .payment__title {
+      font-size:  40px;
+      line-height: 1.2;
+   }
+   .payment__desk{
+      font-size: 17px;
+   }
+   
+}
+
+
+@media (max-width: 474px){
+   .payment__form-item{
+      flex-basis: 100%;
+   }
+   .payment__form-bottom{
+      flex-wrap: wrap;
+
+      .payment__form-item:nth-child(1){
+         margin-right: 0;
+      }
+   }
+   .payment__form-bottom{
+      margin-top: 15px;
+   }
+   .payment__btn{
+      margin-top: 20px;
+   }
+}

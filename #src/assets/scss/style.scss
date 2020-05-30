@@ -1,0 +1,18 @@
+// utilities
+@import "./utilities/_normalize";
+@import './utilities/_mixins';
+@import "./utilities/_vars";
+@import './utilities/_fonts';
+@import './global';
+
+ 
+/* blocks */
+@import "./utilities/blocks/header";
+@import "./utilities/blocks/catering";
+@import "./utilities/blocks/craft";
+@import "./utilities/blocks/crayfish";
+@import "./utilities/blocks/cooking";
+@import "./utilities/blocks/recipes";
+@import "./utilities/blocks/payment";
+@import "./utilities/blocks/stock";
+@import "./utilities/blocks/footer";

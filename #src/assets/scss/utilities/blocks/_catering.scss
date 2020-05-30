@@ -1,0 +1,115 @@
+.catering{
+   padding-top: 120px;
+   padding-bottom: 50px;
+}
+
+.catering__row{
+   padding-left: 15px;
+   padding-right: 15px;
+
+   max-width: 1340px;
+   margin-left: auto;
+   margin-right: auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+
+
+.catering__item{
+   width: 235px;
+   padding: 20px 15px;
+   margin-bottom: 15px;
+
+   border-radius: 24px;
+
+   text-align: center;
+
+   transition: background-color .2s linear;
+
+   &:focus{
+      background-color: $tulipTree;
+   }
+
+   &:hover{
+      background-color: $tulipTree;
+      .catering__item-title{
+         color:  $mineShaft;
+      }
+      .catering__desk{
+         color: $mineShaft;
+      }
+   }
+
+   img{
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+ 
+
+.catering__item-title{
+   margin-top: 20px;
+   margin-bottom: 15px;
+   
+   font-family: $Lobster;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 109%;
+   color: $white;
+
+   transition: color .2s linear;
+}
+
+.catering__desk{
+   font-size: 16px;
+   line-height: 1.18;
+   color: $alto;
+
+   transition: color .2s linear;
+}
+
+.catering__title{
+   position: relative;
+
+   &:before{
+      content: "";
+      position: absolute;
+      top: -73px;
+      left: 50%;
+      
+      transform: translateX(-50%);
+
+      width: 112px;
+      height: 78px;
+      background: url("../img/catering/beer.png");
+   }
+}
+
+.craft__btn{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+@media (max-width: 1031px){
+   .catering__item{
+      flex-basis: 48%;
+   }
+}
+
+@media (max-width: 972px){
+   .catering{
+      padding-top: 100px;
+      padding-bottom: 10px;
+   }
+}
+
+@media (max-width: 506px){
+   .catering__item{
+      flex-basis: 100%;
+   }
+}

@@ -1,0 +1,148 @@
+.recipes__inner{
+   display: flex;
+}
+
+.recipes__img{
+   img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+}
+
+.recipes__content{
+   padding-left: 50px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.recipes__top{
+   max-width: 922px;
+}
+
+.recipes__title{
+   font-family: $Lobster;
+   font-weight: 400;
+   font-size: 60px;
+   line-height: 1.3;
+   color: $tulipTree;
+}
+
+.recipes__desk{
+   margin-top: 25px;
+   margin-bottom: 25px;
+
+   font-size: 25px;
+   line-height: 1.16;
+   color: $concrete;
+}
+
+.recipes__btn{
+   margin-bottom: 78px;
+}
+
+.recipes__row{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 10px;
+   flex-wrap :wrap;
+}
+
+.recipes__item{
+   font-family: $Lobster;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 1.23;
+   text-align: center;
+
+   color: #FFFFFF;
+
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   padding: 10px;
+   flex-basis: 24%;
+   min-height: 209px;
+
+   background-image: url("../img/recipes/1.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.recipes__item:nth-child(2){
+   background-image: url("../img/recipes/2.png");
+}
+
+.recipes__item:nth-child(3){
+   background-image: url("../img/recipes/3.png");
+}
+
+.recipes__item:nth-child(4){
+   background-image: url("../img/recipes/4.png");
+}
+
+
+@media (max-width: 1482px){
+   .recipes__content{
+      padding-left: 0;
+   }
+   .recipes__title{
+      margin-top: 20px;
+   }
+   .recipes__inner{
+      flex-wrap: wrap;
+   }
+   .recipes__img{
+      width: 100%;
+      picture{
+         display: block;
+         width: 100%;
+         height: 800px;
+         object-position: bottom;
+      }
+   }  
+   .recipes__btn{
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 1161px){
+   .recipes__item{
+      flex-basis: 48%;
+
+      margin-bottom: 20px;
+
+   }
+   .recipes__title{
+      font-size: 40px;
+      line-height: 1.2;
+   }
+ 
+}
+
+@media(max-width: 582px){
+   .recipes__item{
+      font-size: 20px;
+   }
+   
+   .recipes__img{
+
+      picture{
+         height: 300px;
+      }
+   }  
+}
+
+@media(max-width: 407px){
+   .recipes__item{
+      font-size: 16px;
+   }
+
+   
+}
