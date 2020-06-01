@@ -388,7 +388,7 @@ ul li {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  background-image: url("../img/header/763d567d07c7fbaa77d18537fefb9012.jpg");
+  background-image: url("../img/header/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -855,6 +855,8 @@ ul li {
   background-image: url("../img/recipes/4.png"); }
 
 @media (max-width: 1482px) {
+  .recipes__row {
+    margin-right: 0; }
   .recipes__content {
     padding-left: 0; }
   .recipes__title {
@@ -881,6 +883,10 @@ ul li {
   .recipes__title {
     font-size: 40px;
     line-height: 1.2; } }
+
+@media (max-width: 764px) {
+  .recipes__img picture {
+    height: 496px; } }
 
 @media (max-width: 582px) {
   .recipes__item {

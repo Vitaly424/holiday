@@ -89,6 +89,9 @@
 
 
 @media (max-width: 1482px){
+   .recipes__row{
+      margin-right: 0;
+   }
    .recipes__content{
       padding-left: 0;
    }
@@ -124,6 +127,14 @@
       line-height: 1.2;
    }
  
+}
+
+@media (max-width: 764px){
+   .recipes__img{
+      picture{
+         height: 496px;
+      }
+   }  
 }
 
 @media(max-width: 582px){
